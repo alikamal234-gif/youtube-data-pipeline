@@ -5016,3 +5016,17 @@ ModuleNotFoundError: No module named 'extraction'
 [2026-09-17T15:40:03.904+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:40:03.902+0000] {dag.py:3096} INFO - Sync 1 DAGs
 [2026-09-17T15:40:03.933+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:40:03.932+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_extraction to 2026-09-17 00:00:00+00:00, run_after=2026-09-18 00:00:00+00:00
 [2026-09-17T15:40:03.976+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extraction_dag.py took 0.266 seconds
+[2026-09-17T15:40:34.221+0000] {processor.py:161} INFO - Started process (PID=2718) to work on /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:40:34.224+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extraction_dag.py for tasks to queue
+[2026-09-17T15:40:34.227+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:40:34.227+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:40:34.404+0000] {processor.py:840} INFO - DAG(s) 'youtube_extraction' retrieved from /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:40:34.455+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:40:34.454+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-17T15:40:34.484+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:40:34.484+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_extraction to 2026-09-17 00:00:00+00:00, run_after=2026-09-18 00:00:00+00:00
+[2026-09-17T15:40:34.521+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extraction_dag.py took 0.306 seconds
+[2026-09-17T15:41:04.917+0000] {processor.py:161} INFO - Started process (PID=2727) to work on /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:41:04.919+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/extraction_dag.py for tasks to queue
+[2026-09-17T15:41:04.923+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:41:04.922+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:41:05.033+0000] {processor.py:840} INFO - DAG(s) 'youtube_extraction' retrieved from /opt/airflow/dags/extraction_dag.py
+[2026-09-17T15:41:05.082+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:41:05.082+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-17T15:41:05.119+0000] {logging_mixin.py:188} INFO - [2026-09-17T15:41:05.118+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_extraction to 2026-09-17 00:00:00+00:00, run_after=2026-09-18 00:00:00+00:00
+[2026-09-17T15:41:05.147+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/extraction_dag.py took 0.236 seconds
