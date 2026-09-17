@@ -1,0 +1,44 @@
+[2026-09-17T13:08:13.106+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-09-17T13:08:13.133+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:08:06.483253+00:00 [queued]>
+[2026-09-17T13:08:13.147+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:08:06.483253+00:00 [queued]>
+[2026-09-17T13:08:13.148+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-09-17T13:08:13.167+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_core> on 2026-09-17 13:08:06.483253+00:00
+[2026-09-17T13:08:13.192+0000] {standard_task_runner.py:63} INFO - Started process 1222 to run task
+[2026-09-17T13:08:13.197+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_warehouse', 'load_core', 'manual__2026-09-17T13:08:06.483253+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/warehouse_dag.py', '--cfg-path', '/tmp/tmp_d9s5rge']
+[2026-09-17T13:08:13.202+0000] {standard_task_runner.py:91} INFO - Job 26: Subtask load_core
+[2026-09-17T13:08:13.335+0000] {task_command.py:426} INFO - Running <TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:08:06.483253+00:00 [running]> on host 2af1f86c161b
+[2026-09-17T13:08:13.525+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_warehouse' AIRFLOW_CTX_TASK_ID='load_core' AIRFLOW_CTX_EXECUTION_DATE='2026-09-17T13:08:06.483253+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-17T13:08:06.483253+00:00'
+[2026-09-17T13:08:13.528+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-09-17T13:08:13.626+0000] {logging_mixin.py:188} INFO - 0
+[2026-09-17T13:08:13.655+0000] {logging_mixin.py:188} INFO -       video_id  ... comments
+0  kCEB12gxL6k  ...       50
+1  sAgeeDfrMcI  ...       14
+2  ilUTgsqOHsI  ...       20
+3  psHj6r1LsDQ  ...      202
+4  bU7H7MWrbiY  ...       43
+
+[5 rows x 7 columns]
+[2026-09-17T13:08:13.657+0000] {logging_mixin.py:188} INFO - video_id                object
+title                   object
+published_at    datetime64[ns]
+duration                 int64
+views                    int64
+likes                    int64
+comments                 int64
+dtype: object
+[2026-09-17T13:08:13.659+0000] {logging_mixin.py:188} INFO - video_id        0
+title           0
+published_at    0
+duration        0
+views           0
+likes           0
+comments        0
+dtype: int64
+[2026-09-17T13:08:13.735+0000] {logging_mixin.py:188} INFO - Données nettoyées insérées dans core !
+[2026-09-17T13:08:13.737+0000] {logging_mixin.py:188} INFO - Transformation + chargement Core terminés
+[2026-09-17T13:08:13.738+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-09-17T13:08:13.740+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-09-17T13:08:13.751+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=youtube_warehouse, task_id=load_core, run_id=manual__2026-09-17T13:08:06.483253+00:00, execution_date=20260917T130806, start_date=20260917T130813, end_date=20260917T130813
+[2026-09-17T13:08:13.776+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-09-17T13:08:13.792+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-09-17T13:08:13.795+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

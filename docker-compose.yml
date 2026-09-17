@@ -29,7 +29,7 @@ x-airflow-common:
     AIRFLOW_CONN_POSTGRES_DB_YT_ELT: 'postgresql://${ELT_DATABASE_USERNAME}:${ELT_DATABASE_PASSWORD}@${POSTGRES_CONN_HOST}:${POSTGRES_CONN_PORT}/${ELT_DATABASE_NAME}'
     # Variables can be written as follows: 
     # AIRFLOW_VAR_{VARIABLE_NAME}
-    AIRFLOW_VAR_API_KEY: ${API_KEY}
+    AIRFLOW_VAR_API_KEY: ${YOUTUBE_API_KEY}
     AIRFLOW_VAR_CHANNEL_HANDLE: ${CHANNEL_HANDLE}
     # Postgres databases environment variables - Needed for integration and data quality tests
     ELT_DATABASE_NAME: ${ELT_DATABASE_NAME}
@@ -43,8 +43,11 @@ x-airflow-common:
     - ./data:/opt/airflow/data
     - ./include:/opt/airflow/include
     - ./logs:/opt/airflow/logs
-    - ./plugins:/opt/airflow/plugins
+    # - ./plugins:/opt/airflow/plugins
     - ./tests:/opt/airflow/tests
+    - ./extraction:/opt/airflow/extraction
+    - ./loading:/opt/airflow/loading
+    - ./transformation:/opt/airflow/transformation
   user: "${AIRFLOW_UID}:0"
   depends_on:
     &airflow-common-depends-on

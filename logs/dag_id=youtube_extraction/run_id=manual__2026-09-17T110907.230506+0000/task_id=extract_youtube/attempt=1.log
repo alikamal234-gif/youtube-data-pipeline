@@ -1,0 +1,19 @@
+[2026-09-17T11:09:08.005+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-09-17T11:09:08.036+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_extraction.extract_youtube manual__2026-09-17T11:09:07.230506+00:00 [queued]>
+[2026-09-17T11:09:08.047+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_extraction.extract_youtube manual__2026-09-17T11:09:07.230506+00:00 [queued]>
+[2026-09-17T11:09:08.048+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-09-17T11:09:08.062+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): extract_youtube> on 2026-09-17 11:09:07.230506+00:00
+[2026-09-17T11:09:08.068+0000] {standard_task_runner.py:63} INFO - Started process 578 to run task
+[2026-09-17T11:09:08.071+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_extraction', 'extract_youtube', 'manual__2026-09-17T11:09:07.230506+00:00', '--job-id', '16', '--raw', '--subdir', 'DAGS_FOLDER/extraction_dag.py', '--cfg-path', '/tmp/tmpfg9vv9u9']
+[2026-09-17T11:09:08.073+0000] {standard_task_runner.py:91} INFO - Job 16: Subtask extract_youtube
+[2026-09-17T11:09:08.133+0000] {task_command.py:426} INFO - Running <TaskInstance: youtube_extraction.extract_youtube manual__2026-09-17T11:09:07.230506+00:00 [running]> on host 2af1f86c161b
+[2026-09-17T11:09:08.226+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_extraction' AIRFLOW_CTX_TASK_ID='extract_youtube' AIRFLOW_CTX_EXECUTION_DATE='2026-09-17T11:09:07.230506+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-17T11:09:07.230506+00:00'
+[2026-09-17T11:09:08.229+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-09-17T11:09:11.062+0000] {logging_mixin.py:188} INFO - Nombre de vidéos extraites : 112
+[2026-09-17T11:09:11.064+0000] {logging_mixin.py:188} INFO - JSON sauvegardé : /opt/airflow/data/YT_data_2026-09-17.json
+[2026-09-17T11:09:11.065+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-09-17T11:09:11.067+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-09-17T11:09:11.076+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=youtube_extraction, task_id=extract_youtube, run_id=manual__2026-09-17T11:09:07.230506+00:00, execution_date=20260917T110907, start_date=20260917T110908, end_date=20260917T110911
+[2026-09-17T11:09:11.146+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-09-17T11:09:11.160+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-09-17T11:09:11.165+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

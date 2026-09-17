@@ -1,0 +1,44 @@
+[2026-09-17T13:10:32.804+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2026-09-17T13:10:32.825+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:10:28.856475+00:00 [queued]>
+[2026-09-17T13:10:32.836+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:10:28.856475+00:00 [queued]>
+[2026-09-17T13:10:32.843+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2026-09-17T13:10:32.866+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): load_core> on 2026-09-17 13:10:28.856475+00:00
+[2026-09-17T13:10:32.874+0000] {standard_task_runner.py:63} INFO - Started process 1274 to run task
+[2026-09-17T13:10:32.878+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'youtube_warehouse', 'load_core', 'manual__2026-09-17T13:10:28.856475+00:00', '--job-id', '36', '--raw', '--subdir', 'DAGS_FOLDER/warehouse_dag.py', '--cfg-path', '/tmp/tmpoatwdfq6']
+[2026-09-17T13:10:32.882+0000] {standard_task_runner.py:91} INFO - Job 36: Subtask load_core
+[2026-09-17T13:10:32.938+0000] {task_command.py:426} INFO - Running <TaskInstance: youtube_warehouse.load_core manual__2026-09-17T13:10:28.856475+00:00 [running]> on host 2af1f86c161b
+[2026-09-17T13:10:33.027+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='youtube_warehouse' AIRFLOW_CTX_TASK_ID='load_core' AIRFLOW_CTX_EXECUTION_DATE='2026-09-17T13:10:28.856475+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2026-09-17T13:10:28.856475+00:00'
+[2026-09-17T13:10:33.029+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2026-09-17T13:10:33.073+0000] {logging_mixin.py:188} INFO - 0
+[2026-09-17T13:10:33.096+0000] {logging_mixin.py:188} INFO -       video_id                                          title  ... likes  comments
+0  kvyNXbX7JzI      Stop Bevels From Overlapping in Blender!🔥  ...   949        22
+1  qrYloOq7a-0       Blender's Extrude Trick 90% Don't Know!🤯  ...   614         7
+2  MRWF23n5pZc  Blender's Secret "To Sphere" Tool Is Insane!🤯  ...   814        23
+3  96kX5kyqRFE         Make Water Move in Blender in Seconds🤯  ...   287         5
+4  _ajtR6VGkBM      This Hidden Blender Snap Tool Is Insane!🤯  ...   244         6
+
+[5 rows x 7 columns]
+[2026-09-17T13:10:33.099+0000] {logging_mixin.py:188} INFO - video_id                object
+title                   object
+published_at    datetime64[ns]
+duration                 int64
+views                    int64
+likes                    int64
+comments                 int64
+dtype: object
+[2026-09-17T13:10:33.101+0000] {logging_mixin.py:188} INFO - video_id        0
+title           0
+published_at    0
+duration        0
+views           0
+likes           0
+comments        0
+dtype: int64
+[2026-09-17T13:10:33.238+0000] {logging_mixin.py:188} INFO - Données nettoyées insérées dans core !
+[2026-09-17T13:10:33.240+0000] {logging_mixin.py:188} INFO - Transformation + chargement Core terminés
+[2026-09-17T13:10:33.242+0000] {python.py:237} INFO - Done. Returned value was: None
+[2026-09-17T13:10:33.245+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2026-09-17T13:10:33.261+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=youtube_warehouse, task_id=load_core, run_id=manual__2026-09-17T13:10:28.856475+00:00, execution_date=20260917T131028, start_date=20260917T131032, end_date=20260917T131033
+[2026-09-17T13:10:33.337+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2026-09-17T13:10:33.383+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2026-09-17T13:10:33.388+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

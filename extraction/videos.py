@@ -46,6 +46,4 @@ def videos(playlist_id):
         if not next_page_token:
             break
 
-    return {
-        "items": all_items
-    }
+    return all_items
