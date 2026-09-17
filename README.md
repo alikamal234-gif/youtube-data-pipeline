@@ -1,10 +1,4 @@
-**« Ajoute aussi les commandes pour tester, lancer le projet, démarrer Docker, et tout le nécessaire. »**
 
-Oui. Pour un README vraiment utilisable, ajoute une section **Installation & Commandes** avec tout le workflow : installation, `.env`, Docker, Airflow, tests, PostgreSQL et arrêt.
-
-Tu peux remplacer les sections correspondantes de ton README par celles-ci :
-
-````markdown
 # YouTube Data Pipeline
 
 Pipeline ETL/ELT permettant d'extraire les données d'une chaîne YouTube via la **YouTube Data API v3**, de les sauvegarder en JSON, de les charger dans PostgreSQL, puis de les transformer et synchroniser dans un Data Warehouse organisé en couches **Staging / Core**.
@@ -1083,5 +1077,3 @@ docker compose build --no-cache
 docker compose up -d
 docker compose ps
 ```
-
-**Point important pour ton README :** évite de mettre les vrais mots de passe, la vraie `YOUTUBE_API_KEY` ou la vraie `FERNET_KEY`. Utilise uniquement des placeholders comme `YOUR_YOUTUBE_API_KEY`.
