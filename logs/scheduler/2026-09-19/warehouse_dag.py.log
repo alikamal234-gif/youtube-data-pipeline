@@ -1,0 +1,32 @@
+[2026-09-19T15:34:55.058+0000] {processor.py:161} INFO - Started process (PID=52) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:34:55.062+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-09-19T15:34:55.067+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:34:55.066+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:34:59.458+0000] {processor.py:840} INFO - DAG(s) 'youtube_warehouse' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:34:59.936+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:34:59.934+0000] {override.py:1829} INFO - Created Permission View: can read on DAG:youtube_warehouse
+[2026-09-19T15:34:59.987+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:34:59.987+0000] {override.py:1829} INFO - Created Permission View: can delete on DAG:youtube_warehouse
+[2026-09-19T15:35:00.030+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:00.029+0000] {override.py:1829} INFO - Created Permission View: can edit on DAG:youtube_warehouse
+[2026-09-19T15:35:00.035+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:00.034+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-19T15:35:00.103+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:00.098+0000] {dag.py:3118} INFO - Creating ORM DAG for youtube_warehouse
+[2026-09-19T15:35:00.109+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:00.108+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_warehouse to None, run_after=None
+[2026-09-19T15:35:00.239+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 5.191 seconds
+[2026-09-19T15:35:30.922+0000] {processor.py:161} INFO - Started process (PID=68) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:35:30.946+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-09-19T15:35:30.953+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:30.952+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:35:31.535+0000] {processor.py:840} INFO - DAG(s) 'youtube_warehouse' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:35:31.653+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:31.653+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-19T15:35:31.666+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:35:31.666+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_warehouse to None, run_after=None
+[2026-09-19T15:35:31.711+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.801 seconds
+[2026-09-19T15:36:01.857+0000] {processor.py:161} INFO - Started process (PID=77) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:01.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-09-19T15:36:01.896+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:01.896+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:02.365+0000] {processor.py:840} INFO - DAG(s) 'youtube_warehouse' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:02.392+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:02.392+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-19T15:36:02.406+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:02.405+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_warehouse to None, run_after=None
+[2026-09-19T15:36:02.429+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.577 seconds
+[2026-09-19T15:36:33.193+0000] {processor.py:161} INFO - Started process (PID=86) to work on /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:33.214+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/warehouse_dag.py for tasks to queue
+[2026-09-19T15:36:33.220+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:33.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:33.971+0000] {processor.py:840} INFO - DAG(s) 'youtube_warehouse' retrieved from /opt/airflow/dags/warehouse_dag.py
+[2026-09-19T15:36:34.030+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:34.030+0000] {dag.py:3096} INFO - Sync 1 DAGs
+[2026-09-19T15:36:34.057+0000] {logging_mixin.py:188} INFO - [2026-09-19T15:36:34.056+0000] {dag.py:3954} INFO - Setting next_dagrun for youtube_warehouse to None, run_after=None
+[2026-09-19T15:36:34.114+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/warehouse_dag.py took 0.934 seconds
